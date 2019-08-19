@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Project: Golden Sands | Atelier BFGF">
+
+  <title>BFGF Project: Golden Sands</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FONTS -->
+  <link rel="stylesheet" href="https://use.typekit.net/rtm2dtx.css">
+
+  <!-- Smooth Scroll -->
+  <script src="assets/js/smoothscroll.js"></script>
+
+  <!-- Lazy Load -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+
+  <!-- Overlay Transition -->
+  <script>
+    function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
+
+</head>
+<body>
+  
+<span class="title longtextpos">golden sands</span>
+<span class="about"><a href="aboutgoa.html">about the project</span></a>
+
+<div class="itemgrid">
+
+  <section id="header">
+    
+  <!--<span class="titletop"><a href="http://www.goldensandsgoa.in">goldensandsgoa.in</span></a>-->
+  <span class="abouttopcenter"><a href="aboutgoa.html">about the project</span></a>
+  
+  <!-- Nav -->
+
+  <div id="projectnav">
+    <ul>
+      <a href="index.html#portfolioitems" id="item1"><li><span>portfolio</span></li></a>
+      <a href="index.html#aboutus" id="item2"><li><span>about</span></li></a>
+      <!-- <a href="#"><li><span id="item3">services</span></li></a> -->
+      <a href="mailto:hello@atelierbfgf.com" id="rightify"><li><span>hello@atelierbfgf.com</span><li></a>
+    </ul>
+
+    <a href="index.html"><img src="assets/images/BGFG-logo.png" id="navlogo" alt="BFGF Logo"></a>
+
+    <div id="mobilenav"> 
+      <span id="burger" onclick="openNav()">&#9776;</span>
+      </div>
+
+  </div>
+
+  <!-- Mobile Nav -->
+    
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+      <div class="overlay-content">
+        <a href="index.html#aboutus" onclick="closeNav()">about</a>
+        <a href="index.html#portfolioitems" onclick="closeNav()">portfolio</a>
+        <!-- <a href="about.html" onclick="closeNav()">services</a> -->
+        <a href="mailto:hello@atelierbfgf.com" id="email" onclick="closeNav()">hello@atelierbfgf.com</a>
+      </div>
+
+    </div>
+
+  </section>
+    
+  <section id="images">
+
+    <div class="contentimages">
+      <ul>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/GOLDENSANDS-WP-1.jpg" alt="Golden Sands"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/GOLDENSANDS-WP-2.jpg" alt="Golden Sands"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/GOLDENSANDS-WP-3.jpg" alt="Golden Sands"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/GOLDENSANDS-WP-4.jpg" alt="Golden Sands"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/GOLDENSANDS-WP-5.jpg" alt="Golden Sands"></li>
+        <li><img class="lazy" src="assets/images/spinner.gif" data-src="assets/images/GOLDENSANDS-WP-6.jpg" alt="Golden Sands"></li>
+        <li><span class="projects"><a href="index.html#portfolioitems">back to portfolio</a></span></li>
+      </ul>
+    </div>
+
+  </section>
+
+</div>
+
+<section id="copyright">
+  Copyright &copy; 2018 Atelier BFGF. All Rights Reserved.
+</section>
+
+<!-- Lazy Load -->
+ 
+<script>
+    $(function() {
+        $('.lazy').lazy();
+    });
+</script>
+
+</body>
+</html>
