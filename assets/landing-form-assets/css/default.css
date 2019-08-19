@@ -1,0 +1,288 @@
+/* General Demo Style */
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+@font-face {
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+	font-family: futura-pt, sans-serif;
+	color: #2d2d2d;
+	background: #fff;
+	font-weight: 300;
+	overflow-x: hidden;
+}
+
+a {
+	color: #888;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	color: #f7c3c9;
+}
+
+/* Header Style */
+.main,
+.container > header {
+	margin: 0 auto;
+	padding: 2em;
+}
+
+.container > header {
+	text-align: center;
+	background: rgba(0,0,0,0.01);
+}
+
+.container > header h1 {
+	font-size: 2.625em;
+	line-height: 1.3;
+	margin: 0;
+	font-weight: 300;
+}
+
+.container > header span {
+	display: block;
+	font-size: 60%;
+	color: #ee808b
+	padding: 0 0 0.6em 0.1em;
+}
+
+/* Main Content */
+.main {
+	max-width: 50em;
+	padding-top: 150px;
+}
+
+/* To Navigation Style */
+.codrops-top {
+	background: #fff;
+	background: rgba(255, 255, 255, 0.4);
+	text-transform: uppercase;
+	width: 100%;
+	font-size: 0.69em;
+	line-height: 2.2;
+}
+
+.codrops-top a {
+	padding: 0 1em;
+	letter-spacing: 0.1em;
+	color: #E96D65;
+	font-weight: 700;
+	display: inline-block;
+}
+
+.codrops-top a:hover {
+	background: rgba(255,255,255,0.5);
+	color: #bd4a43;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	float: left;
+	display: block;
+}
+
+.codrops-icon:before {
+	font-family: 'codropsicons';
+	margin: 0 4px;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+.codrops-icon-archive:before {
+	content: "\e002";
+}
+
+.codrops-icon-next:before {
+	content: "\e000";
+}
+
+.codrops-icon-about:before {
+	content: "\e003";
+}
+
+@media screen and (max-width: 25em) {
+
+	.codrops-icon span {
+		display: none;
+	}
+
+}
+
+/* Landing Form */
+
+/*#landing-logo {
+	max-width: 100px;
+}*/
+
+/* --- NAV --- */
+
+/*#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height:75px; 
+  background-color:#fff;
+  color: #FFFFFF;
+  z-index: 10;
+  display: none;
+  margin:0 auto;
+}
+
+#nav li {
+  display: inline;
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  color: #383838;
+  margin-left: 2em;
+}*/
+
+#item1{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#item2{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 6em;
+}
+
+/*#nav li span#item3{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 5em;
+}*/
+
+#rightify li {
+  position: absolute;
+  right: 2em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*#nav a {
+  text-decoration: none;
+}
+
+#nav li span:hover {
+  border-bottom: 2px solid #383838;
+}*/
+
+#navlogo {
+  height: 2em;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0; 
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*.destination {
+  position:absolute;
+  z-index:-1;
+  left:0;
+  margin-top:-75px;
+}*/
+
+/* ============ NAV copied from PROJECT IMAGE PAGES ============ */
+
+.itemgrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "header"
+    "images";
+}
+
+#projectnav {
+  grid-area: header;
+  position: fixed;
+  top: 0;
+  width: 100%; 
+  height:75px; 
+  background-color:#fff;
+  color: #FFFFFF;
+  z-index: 10;
+  margin:0 auto;
+}
+
+#projectnav li {
+  display: inline;
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  color: #383838;
+  margin-left: 2em;
+}
+
+#projectnav li span#item1{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#projectnav li span#item2{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 3em;
+}
+
+#projectnav li span#item3{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 5em;
+}
+
+#projectnav a {
+  text-decoration: none;
+}
+
+#projectnav li span:hover {
+  border-bottom: 3px solid #707070;
+}
